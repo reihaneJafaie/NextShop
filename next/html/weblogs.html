@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>مجله اینترنتی فروشگاه نکست</title>
+      <link rel="stylesheet" href="../style/bootstrap.min.css">
+      <link rel="stylesheet" href="../style/style.css">
+      <script src="../script/all.min.js"></script>
+      <style>
+            .card {
+                  background-color: F7F6DC;
+                  height: 400px;
+                  z-index: 10;
+                  overflow: hidden
+            }
+
+            .card:hover .backgroundEffect {
+                  bottom: 0;
+                  height: 320px;
+                  width: 100%;
+                  position: absolute;
+                  z-index: -1;
+                  background-color: #B1D7B4;
+                  animation: popBackground 0.3s ease-in
+            }
+
+            .weblog {
+                  text-decoration: none;
+            }
+
+            @keyframes popBackground {
+                  0% {
+                        height: 20px;
+                        border-top-left-radius: 50%;
+                        border-top-right-radius: 50%
+                  }
+
+                  50% {
+                        height: 80px;
+                        border-top-left-radius: 75%;
+                        border-top-right-radius: 75%
+                  }
+
+                  75% {
+                        height: 160px;
+                        border-top-left-radius: 85%;
+                        border-top-right-radius: 85%
+                  }
+
+                  100% {
+                        height: 320px;
+                        border-top-left-radius: 100%;
+                        border-top-right-radius: 100%
+                  }
+            }
+
+            .card .pic {
+                  position: relative
+            }
+
+            .card .pic img {
+                  width: 100%;
+                  height: 180px;
+                  object-fit: cover
+            }
+      </style>
+</head>
+
+<body>
+      <nav class="navbar navbar-expand-md  navbar-light d-flex flex-column mb-5 position-sticky shadow">
+            <div class="container-fluid">
+                  <a href="#" class="navbar-brand text-muted">n<span id="e " class="text-warning">e</span>xt</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav container">
+                              <li class="nav-item"><a href="../final/index.html" class="nav-link">صفحه اصلی</a></li>
+                              <li class="nav-item"><a href="" class="nav-link">راهنما خرید</a></li>
+                              <li class="nav-item"><a href="../html/weblogs.html" class="nav-link">مجله اینترنتی</a>
+                              </li>
+                              <li class="nav-item"><a href="" class="nav-link">درباره ما</a></li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle division" href="#" role="button"
+                                          data-bs-toggle="dropdown">
+                                          دسته بندی کاغذدیواری
+                                    </a>
+                              </li>
+                        </ul>
+
+
+                        <form class="d-flex  justify-content-center">
+                              <button class=" hbtn btn text-muted hb-fill-bottom p-2 ms-1 bo" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#myModal">
+                                    حساب کاربری
+                                    <i id="Account" class="fa-regular fa-circle-user  font-icon text-uppercase"></i>
+                              </button>
+                              <button class=" hbtn btn  hb-fill-bottom  ps-4" type="button" href="../">
+                                    <a href="../html/cart.html" class="text-muted">
+                                          سبد خرید
+                                          <i id="" class="fa-solid fa-bag-shopping  font-icon text-uppercase"></i>
+                                          <span
+                                                class="numbercart bg-light pe-1 ps-1 position-absolute  rounded-circle text-center">0</span>
+
+                                    </a>
+                              </button>
+                        </form>
+
+                        <div class="modal fade" id="myModal">
+                              <div class="modal-dialog">
+                                    <div class="modal-content p-4">
+
+                                          <div class="container position-relative">
+                                                <button type="button" class="btn-close position-absolute start-0"
+                                                      data-bs-dismiss="modal"></button>
+                                                <h4 class="h4 text-center pb-3 text-success">ورود به حساب کاربری</h4>
+
+                                                <form action="/action_page.php">
+                                                      <div class="mb-3 mt-3">
+                                                            <label for="email" class="mb-2">نام کاربری یا ایمیل:</label>
+                                                            <input type="email" class="form-control" id="email"
+                                                                  placeholder="ایمیل خود را وارد کنید...." name="email">
+                                                      </div>
+                                                      <div class="mb-3  position-relative">
+                                                            <label for="pwd" class="mb-2">رمز عبور :</label>
+                                                            <input type="password" class="form-control" id="pwd"
+                                                                  placeholder="رمز خود را وارد کنید..." name="pswd">
+                                                            <img src="../img/login/view.png " class="eyes" alt="">
+                                                      </div>
+
+
+
+                                                      <div class="d-flex justify-content-between mt-3">
+                                                            <button type="submit" class="btn btn-success">ورود</button>
+                                                            <button type="button" class="btn">رمز عبور خود را فراموش
+                                                                  کرده اید ؟</button>
+                                                      </div>
+                                                </form>
+                                          </div>
+
+                                          <div class="bottom-container text-center mt-5">
+                                                <a href="../html/singnup.html" target="_blank">حساب کاربری ندارید؟ ثبت
+                                                      نام کنید</a>
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div>
+
+                        </div>
+                  </div>
+
+            </div>
+      </nav>
+      <section class="container">
+            <div class="h2 text-center m-5">
+                  مجله های اینترنتی
+            </div>
+            <div class="weblogsinpage row d-flex justify-content-center">
+
+                  <!--
+                        <a href="#"
+                        class="weblog col-lg-4 col-md-5 col-sm-9 asidepost d-flex justify-content-center  flex-column align-items-center">
+
+                        <div class=" card  shadow mb-5 ">
+                              <div class="backgroundEffect"></div>
+                              <div class="pic"> <img class=""
+                                          src="../img/How To Put Up Wallpaper A Simple & Easy Guide — MELANIE LISSACK INTERIORS.jpg"
+                                          alt="">
+                                    <div class="date d-flex flex-column align-items-center justify-content-center">
+                                          <span class="day">26</span> <span class="month">دی</span> <span
+                                                class="year">1401</span>
+                                    </div>
+                              </div>
+                              <div class="contentt p-2">
+                                    <p class="h6 titleposts mt-2">مقایسه کاغذ دیواری های نانو ، نان وون ، ضد آب</p>
+                                    <p class="text-muted mt-3">
+                                          قیمت کاغذ دیواری نانو این روزها اسم نانو در همه صنایع شنیده می شود. تکنولوژی
+                                          کاغذ دیواری هم از این
+                                          قاعده مستثنا نیست.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-around   w-100">
+                                                <p class="admin text-muted">نکست</p>
+                                                <p class="ps-3 icon text-muted">3<span
+                                                            class="fas fa-comment-alt pe-1"></span></p>
+                                                <button type="button" class="btn btn-outline-success btn-sm">بیشتر
+                                                      بخوانید ...</button>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </a>
+                 -->
+
+
+
+            </div>
+      </section>
+
+          <!--Footer-->
+    <div class="container-fluid justify-content-center footerbox   ">
+      <footer>
+        <div class="row justify-content-around ">
+
+          <div class="col-lg-4 col-md-4 col-sm-10 mt-5 ">
+
+            <div class="form-group ">
+              <label for="email" class="mb-3">
+                <b>
+                  با عضویت در خبر نامه از آخرین اطلاعات کاغذ دیواری های جدید و تخفیفات ویژه با خبر شوید
+                </b>
+              </label>
+              <input type="email" class="form-control " placeholder="ایمیل خود را وارد کنید ..." id="email">
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block my-2 Subscribe mt-4 mb-3 w-100">ثبت
+              نام</button>
+          </div>
+
+          <div class="col-lg-5 col-md-5 mt-5">
+            <ul class="  h-100 d-flex flex-column justify-content-around">
+              <li class="">
+                <h5>سایت مرتب بروز رسانی می شود. برای سفارش و خرید از طریق تلفن یا واتس آپ با ما در تماس باشید</h5>
+              </li>
+              <li class="mt-3">
+                <i class="fa-brands fa-airbnb"></i>
+                تک فروشی به صورت اینترنتی
+              </li>
+              <li class="mt-3">
+                <i class="fa-solid fa-phone-flip"></i>
+                مدیریت: 09121575713
+              </li>
+              <li class="mt-3">
+                <i class="fa-regular fa-comment"></i>
+                واتس اپ: 09127192896
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div
+            class="socialmedia col-lg-2 col-md-2  p-3  text-center d-flex flex-column justify-content-around justify-content-center ">
+            <ul class="list-unstyled mt-md-3 mt-5 ">
+              <li>شبکه های اجتماعی</li>
+              <li class="social d-flex justify-content-around pt-3">
+                <span>
+                  <a href="#"><i class="footericone fa-brands fa-facebook "></i></a>
+                </span>
+                <span>
+                  <a href="#"><i class="footericone fa-brands fa-instagram "></i></a>
+                </span>
+                <span>
+                  <a href="#"><i class="footericone fa-brands fa-twitter "></i></a>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled my-xl-4 my-md-3 mb-2">
+              <li class="mb-2">برنامه نویس سایت :</li>
+              <li>
+                <a class=" developer text-dark " target="_blank" href="https://github.com/reihaneJafaie">RA RA
+                  <i class="fa-brands fa-github text-success"></i></a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+        </div>
+
+        <div class="row justify-content-center px-3 py-3 pt-5">
+          <div class="col text-center">
+            <p class="mb-0">تمام حقوق متعلق به کاغذ دیواری نکست می باشد</p>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+    <script src="../script/JQuery.js"></script>
+      <script src="../script/script2.js"></script>
+      <script src="../script/weblog.js"></script>
+      <script src="../script/bootstrap.bundle.js"></script>
+
+      <script>
+
+            //show weblogs
+            let weblogsinpage = document.querySelector('.weblogsinpage');
+
+            function showAllWeblog() {
+                  for (let i = 0; i < Weblog.length; i++) {
+
+                        weblogsinpage.innerHTML +=
+                              `
+                        <a href="#"
+                        class="weblog col-lg-3 col-md-5 col-sm-9 asidepost d-flex justify-content-center  flex-column align-items-center">
+
+                        <div class=" card  shadow mb-5 ">
+                              <div class="backgroundEffect"></div>
+                              <div class="pic"> <img class=""
+                              src="`+ Weblog[i].img + `" alt="">
+                              <div class="date d-flex flex-column align-items-center justify-content-center"> <span
+                                    class="day">`+ Weblog[i].dateDay + `</span> <span class="month">` + Weblog[i].datemonth + `</span> <span class="year">` + Weblog[i].dateyear + `</span>
+                              </div>
+                              </div>
+                              <div class="contentt p-2">
+                              <p class="h6 titleposts mt-2">`+ Weblog[i].tittle + `</p>
+                              <p class="text-muted mt-3">
+                              `+ Weblog[i].description + `
+                              </p>
+                              <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                              <div class="d-flex align-items-center justify-content-around   w-100">
+                                    <p class="admin text-muted">نکست</p>
+                                    <p class="ps-3 icon text-muted">3<span class="fas fa-comment-alt pe-1"></span></p>
+                                    <button type="button" class="btn btn-outline-success btn-sm">بیشتر بخوانید ...</button>
+                              </div>
+                              </div>
+                              </div>
+                        </div>
+
+                        </a>
+                        
+                        `
+
+                  }
+            }
+            showAllWeblog();
+      </script>
+     
+</body>
+
+</html>

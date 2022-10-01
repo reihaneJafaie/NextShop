@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="../style/bootstrap.min.css">
+      <script src="../script/all.min.js"></script>
+      <style>
+           
+
+.card {
+    width: 250px;
+    height: 450px;
+    z-index: 10;
+    overflow: hidden
+}
+
+
+.card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #a2d18c;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .pic {
+    position: relative
+}
+
+.card .pic img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover
+}
+
+.card .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 70px;
+    background-color: #a2d18c;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+
+
+
+      </style>
+</head>
+<body>
+      <div class="card border-0 me-lg-4 mb-lg-0 mb-4 shadow">
+            <div class="backgroundEffect"></div>
+            <div class="pic"> <img class=""
+                src="../img/How To Put Up Wallpaper A Simple & Easy Guide — MELANIE LISSACK INTERIORS.jpg"
+                alt="">
+              <div class="date"> <span class="day">26</span> <span class="month">دی</span> <span class="year">2019</span>
+              </div>
+            </div>
+            <div class="content">
+              <p class="h-1 mt-4">مقایسه کاغذ دیواری های نانو ، نان وون ، ضد آب</p>
+              <p class="text-muted mt-3">قیمت کاغذ دیواری نانو این روزها اسم نانو در همه صنایع شنیده می شود. تکنولوژی کاغذ دیواری هم از این
+                قاعده مستثنا نیست.</p>
+              <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                <div class="d-flex align-items-center justify-content-center foot">
+                  <p class="admin">نکست</p>
+                  <p class="ps-3 icon text-muted">3 <span class="fas fa-comment-alt pe-1"></span></p>
+                  <button type="button" class="btn  morepost ">بیشتر بخوانید ...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <script src="../script/JQuery.js"></script>
+          <script src="../script/bootstrap.bundle.js"></script>
+</body>
+</html>

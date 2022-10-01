@@ -1,0 +1,118 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url('../fonts/vazir-bold.eot');
+    src: url('../fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir-bold.woff2') format('woff2'), url('../fonts/vazir-bold.woff') format('woff'), url('../fonts/vazir-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: iranMarker;
+    src: url('../fonts/IRANMarker.ttf');
+    src: format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+body{
+
+    font-family: vazirNormal;
+
+}
+
+
+.navbar-brand{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+  background-color: #B1D7B4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+
+.hbtn {
+  white-space: nowrap;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #F7F6DC;
+  display: none;
+}
+
+.tab button {
+  background-color: inherit;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ffc09065
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #FFC090;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color: #f5fcf5;
+}
+
+
+.tabcontent li {
+  background-color: #FFC090;
+
+}
+
+.tabcontent li:hover{
+  background-color: #e0945a;
+  transition: 0.3s;
+}
+
+#footerdivision{
+  background-color: #F7F6DC;
+}
+
+#footerdivision:hover{
+  background-color: #f7efdc;
+}
+
+.eyes{
+position: absolute;
+cursor: pointer;
+top:35px;
+left: 10px;
+width: 20px;
+}
+
+.numbercart{
+  font-size: 10px;
+}
+
+
+
+
+
+.footerbox{
+  background-color: #e0945a;
+
+}
